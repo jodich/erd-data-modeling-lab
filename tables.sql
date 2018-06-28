@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS users (
+id SERIAL PRIMARY KEY,
+name TEXT,
+email TEXT
+);
+
+CREATE TABLE IF NOT EXISTS listings (
+id SERIAL PRIMARY KEY,
+name TEXT,
+city TEXT
+);
+
+CREATE TABLE IF NOT EXISTS users_listings (
+id SERIAL PRIMARY KEY,
+user_id INTEGER,
+listing_id INTEGER
+);
+
